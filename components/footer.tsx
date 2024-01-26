@@ -1,5 +1,3 @@
-import { cva } from "class-variance-authority";
-import Link from "next/link";
 import { CustomLink } from "./ui/custom-link";
 
 export const Footer = () => {

@@ -12,25 +12,25 @@ export default function QrCodePage() {
   return (
     <div
       className={cn(
-        "bg-gray-300 h-full flex items-center justify-center flex-col leading-5 gap-3",
-        outFit.className
+        "flex h-full flex-col items-center justify-center gap-3 bg-gray-300 leading-5",
+        outFit.className,
       )}
     >
-      <div className="max-w-[275px] rounded-xl text-center bg-white p-3">
+      <div className="max-w-[275px] rounded-xl bg-white p-3 text-center">
         <Image
           src="/cards/qr-code/images/image-qr-code.png"
           alt="qr-code"
           width={250}
           height={250}
-          className="rounded-lg mx-auto"
+          className="mx-auto rounded-lg"
         />
 
         <div className="p-1">
-          <h1 className="font-semibold text-blue-950 text-[18px] py-2">
+          <h1 className="py-2 text-[18px] font-semibold text-blue-950">
             Improve your front-end skills by building projects
           </h1>
 
-          <p className="text-gray-400 text-[15px] py-2 font-light">
+          <p className="py-2 text-[15px] font-light text-gray-400">
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>

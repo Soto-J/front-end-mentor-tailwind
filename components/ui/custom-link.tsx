@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export const linkVariants = cva("", {
   variants: {
     variant: {
-      default: `relative after:content-[''] after:h-[2px] after:w-0 after:absolute after:-bottom-0.5 after:left-0 after:rounded-xl hover:after:w-full hover:after:duration-300 hover:after:ease-in-out`,
+      default: `relative after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-0 after:rounded-xl after:content-[''] hover:after:w-full hover:after:duration-300 hover:after:ease-in-out`,
     },
     size: {
       default: "",

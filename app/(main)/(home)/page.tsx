@@ -1,6 +1,9 @@
 import Link from "next/link";
 
-const pages = [{ label: "qr-code", href: "/qr-code" }];
+const pages = [
+  { label: "qr-code", href: "/qr-code" },
+  { label: "Preview-Card", href: "/preview-card" },
+];
 
 export default function Home() {
   return (
