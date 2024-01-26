@@ -1,16 +1,12 @@
+import { cva } from "class-variance-authority";
 import Link from "next/link";
-import React from "react";
-
-type FooterProps = {};
+import { CustomLink } from "./ui/custom-link";
 
 export const Footer = () => {
   return (
     <footer>
-      Challenge by{" "}
-      <Link href="/" target="_blank">
-        Frontend Mentor
-      </Link>
-      . Coded by <Link href="#">John Soto</Link>.
+      Challenge by <CustomLink href="/" label="Frontend Mentor" />
+      . Coded by <CustomLink href="/" label="John Soto" targetBlank />.
     </footer>
   );
 };

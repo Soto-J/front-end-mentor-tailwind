@@ -1,3 +1,3 @@
 export const Container = () => {
-  return <div>Container</div>;
+  return <div className=" after:content-['']">Container</div>;
 };
