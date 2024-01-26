@@ -12,7 +12,7 @@ export default function QrCodePage() {
   return (
     <div
       className={cn(
-        "flex h-full flex-col items-center justify-center gap-3 bg-gray-300 leading-5",
+        "flex min-h-screen flex-col items-center justify-center gap-3 bg-gray-300 leading-5",
         outFit.className,
       )}
     >

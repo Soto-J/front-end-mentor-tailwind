@@ -10,7 +10,7 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["500", "700"] });
 export default function PreviewPage() {
   return (
     <div
-      className={`${montserrat.className} flex h-full items-center justify-center bg-[#f2ebe3]`}
+      className={`${montserrat.className} flex min-h-screen items-center justify-center bg-[#f2ebe3]`}
     >
       <div className="flex max-w-xs flex-col overflow-hidden rounded-lg bg-white sm:grid sm:max-w-lg sm:grid-cols-2">
         <PreviewCardImages />
