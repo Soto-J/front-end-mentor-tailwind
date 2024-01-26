@@ -12,7 +12,7 @@ export default function PreviewPage() {
     <div
       className={`${montserrat.className} flex min-h-screen items-center justify-center bg-[#f2ebe3]`}
     >
-      <div className="flex max-w-xs flex-col overflow-hidden rounded-lg bg-white sm:grid sm:max-w-lg sm:grid-cols-2">
+      <div className="flex w-[95%] max-w-xs flex-col overflow-hidden rounded-lg bg-white sm:grid sm:max-w-lg sm:grid-cols-2">
         <PreviewCardImages />
 
         <div className="space-y-4 p-6">
