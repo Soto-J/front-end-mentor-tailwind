@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Fraunces, Montserrat } from "next/font/google";
-import { cn } from "@/lib/utils";
+
+import { PreviewCardImages } from "./_components/preview-card-images";
+import { PreviewCardButton } from "./_components/preview-card-button";
 
 const fraunces = Fraunces({ subsets: ["latin"], weight: ["700"] });
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["500", "700"] });
@@ -11,22 +13,7 @@ export default function PreviewPage() {
       className={`${montserrat.className} flex h-full items-center justify-center bg-[#f2ebe3]`}
     >
       <div className="flex max-w-xs flex-col overflow-hidden rounded-lg bg-white sm:grid sm:max-w-lg sm:grid-cols-2">
-        <div className="relative">
-          <Image
-            src="/cards/preview-card/images/image-product-desktop.jpg"
-            alt="logo"
-            fill
-            className="hidden object-cover sm:block"
-          />
-          <Image
-            src="/cards/preview-card/images/image-product-mobile.jpg"
-            alt="logo"
-            width={400}
-            height={400}
-            // fill
-            className="block object-cover sm:hidden"
-          />
-        </div>
+        <PreviewCardImages />
 
         <div className="space-y-4 p-6">
           <p className="text-xs font-[500] uppercase tracking-[4px] text-[#6c7289]">
@@ -37,11 +24,10 @@ export default function PreviewPage() {
           >
             Gabrielle Essence Eau De Parfum
           </h1>
-          <p className="text-xs font-[500] text-[#6c7289] leading-5">
+          <p className="text-xs font-[500] leading-5 text-[#6c7289]">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-
           <div className="flex items-center gap-x-4">
             <div
               className={`${fraunces.className} text-3xl font-bold text-[#3c8067]`}
@@ -53,15 +39,7 @@ export default function PreviewPage() {
             </div>
           </div>
 
-          <button className="flex w-full items-center justify-center gap-x-2 rounded-lg bg-[#3c8067] py-3 text-sm text-white active:brightness-75">
-            <Image
-              src="/cards/preview-card/images/icon-cart.svg"
-              alt="Cart Logo"
-              height={14}
-              width={14}
-            />
-            Add to Cart
-          </button>
+          <PreviewCardButton />
         </div>
       </div>
     </div>
