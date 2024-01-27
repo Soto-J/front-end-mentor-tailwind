@@ -18,7 +18,7 @@ export default function RecipePage() {
     <div
       className={`${outfit.className} h-full bg-[#f3e6d8] text-sm text-[#5f574e] sm:py-20`}
     >
-      <div className="mx-auto max-w-2xl rounded-xl bg-white">
+      <div className="mx-auto max-w-2xl rounded-2xl bg-white">
         <RecipeImage />
 
         <div className="space-y-5 p-8 sm:pt-0">
