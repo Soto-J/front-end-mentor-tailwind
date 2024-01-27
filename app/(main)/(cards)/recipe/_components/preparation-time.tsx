@@ -6,28 +6,21 @@ const list = [
 
 export const PreparationTime = () => {
   return (
-    <section className="rounded bg-[#7b284f]/10 p-4">
+    <section className="rounded-lg p-6 pr-20 bg-[#fff5fa]">
       <h2 className="font-bold text-[#7b284f]">Preparation time</h2>
-      <ol className="list-inside list-disc p-2">
+
+      <ul className="mt-1 space-y-2 p-1">
         {list.map(({ label, value }) => (
-          <li key={label} className="flex gap-x-2">
-            <span>{label}:</span>
-            <span>{value}</span>
+          <li key={label} className="flex items-center gap-1">
+            <span className="h-1 w-1 rounded-full bg-[#7b284f]"></span>
+
+            <div className="ml-4">
+              <span className="font-bold">{label}: </span>
+              <span>{value}</span>
+            </div>
           </li>
         ))}
-
-        <li >
-          <span>Total:</span>
-          Approximately 10 minutes
-        </li>
-
-        <li>
-          <span>Preparation:</span>5 minutes
-        </li>
-        <li>
-          <span>Cooking:</span>5 minutes
-        </li>
-      </ol>
+      </ul>
     </section>
   );
 };

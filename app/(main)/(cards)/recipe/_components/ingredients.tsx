@@ -17,11 +17,14 @@ export const Ingredients = () => {
         Ingredients
       </h2>
 
-      <ol className="space-y-1 p-2">
+      <ul className="mt-3 space-y-2 p-1">
         {ingredients.map((ingredient) => (
-          <li className="">{ingredient}</li>
+          <li key={ingredient} className="flex items-center gap-6">
+            <span className="h-1 w-1 rounded-full bg-[#854632]"></span>
+            <p>{ingredient}</p>
+          </li>
         ))}
-      </ol>
+      </ul>
     </section>
   );
 };

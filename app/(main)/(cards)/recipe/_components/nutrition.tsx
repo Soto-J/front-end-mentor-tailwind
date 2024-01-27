@@ -1,4 +1,12 @@
 import { youngSerif } from "../page";
+import { CustomSeparator } from "./custom- separator";
+
+const nutrition = [
+  { label: "Calories", value: "277kcal" },
+  { label: "Carbs", value: "0g" },
+  { label: "Protein", value: "20g" },
+  { label: "Fat", value: "22g" },
+];
 
 export const Nutrition = () => {
   return (
@@ -8,17 +16,23 @@ export const Nutrition = () => {
       >
         Nutrition
       </h2>
-      <p>
+      <p className="py-2">
         The table below shows nutritional values per serving without the
         additional fillings.
       </p>
 
-      <div>
-        <div>Calories 277kcal</div>
-        <div>Carbs 0g</div>
-        <div>Protein 20g</div>
-        <div>Fat 22g</div>
-      </div>
+      <ul>
+        {nutrition.map(({ label, value }, idx) => (
+          <li key={label}>
+            <div className="grid grid-cols-2 px-6 py-2">
+              <div>{label}</div>
+              <div className="font-bold text-[#854632]">{value}</div>
+            </div>
+
+            {idx !== nutrition.length - 1 && <CustomSeparator />}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
