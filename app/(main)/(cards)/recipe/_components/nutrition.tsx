@@ -1,6 +1,10 @@
-import { youngSerif } from "../page";
+import { Young_Serif } from "next/font/google";
 import { CustomSeparator } from "./custom- separator";
 
+const youngSerif = Young_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 const nutrition = [
   { label: "Calories", value: "277kcal" },
   { label: "Carbs", value: "0g" },

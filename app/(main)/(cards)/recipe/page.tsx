@@ -1,13 +1,14 @@
 import { Outfit, Young_Serif } from "next/font/google";
+
 import { Nutrition } from "./_components/nutrition";
 import { Instructions } from "./_components/instructions";
 import { Ingredients } from "./_components/ingredients";
 import { PreparationTime } from "./_components/preparation-time";
-import { CustomSeparator } from "./_components/custom- separator";
 import { RecipeImage } from "./_components/recipe-image";
+import { CustomSeparator } from "./_components/custom- separator";
 
-export const outfit = Outfit({ subsets: ["latin"], weight: ["400"] });
-export const youngSerif = Young_Serif({
+const outfit = Outfit({ subsets: ["latin"], weight: ["400"] });
+const youngSerif = Young_Serif({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -29,11 +30,12 @@ export default function RecipePage() {
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
           </p>
+
           <PreparationTime />
           <Ingredients />
-          <div className="h-[1px] rounded-full bg-[#5f574e]/20" />
+          <CustomSeparator />
           <Instructions />
-          <div className="h-[1px] rounded-full bg-[#5f574e]/20" />
+          <CustomSeparator />
           <Nutrition />
         </div>
       </div>

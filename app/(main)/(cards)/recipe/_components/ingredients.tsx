@@ -1,4 +1,9 @@
-import { youngSerif } from "../page";
+import { Young_Serif } from "next/font/google";
+
+const youngSerif = Young_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const ingredients = [
   "2-3 large eggs",
