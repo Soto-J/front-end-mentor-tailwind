@@ -6,10 +6,10 @@ const list = [
 
 export const PreparationTime = () => {
   return (
-    <section className="rounded-lg p-6 pr-20 bg-[#fff5fa]">
+    <section className="rounded-lg p-7 bg-[#fff5fa]">
       <h2 className="font-bold text-[#7b284f]">Preparation time</h2>
 
-      <ul className="mt-1 space-y-2 p-1">
+      <ul className="pt-4 space-y-4 p-1">
         {list.map(({ label, value }) => (
           <li key={label} className="flex items-center gap-1">
             <span className="h-1 w-1 rounded-full bg-[#7b284f]"></span>

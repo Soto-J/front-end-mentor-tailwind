@@ -6,6 +6,7 @@ import { Ingredients } from "./_components/ingredients";
 import { PreparationTime } from "./_components/preparation-time";
 import { RecipeImage } from "./_components/recipe-image";
 import { CustomSeparator } from "./_components/custom- separator";
+import { cn } from "@/lib/utils";
 
 const outfit = Outfit({ subsets: ["latin"], weight: ["400"] });
 const youngSerif = Young_Serif({
@@ -16,13 +17,18 @@ const youngSerif = Young_Serif({
 export default function RecipePage() {
   return (
     <div
-      className={`${outfit.className} h-full bg-[#f3e6d8] text-sm text-[#5f574e] sm:py-20`}
+      className={cn(
+        `$h-full bg-[#f3e6d8] text-sm text-[#5f574e]/75 sm:py-20`,
+        outfit.className,
+      )}
     >
-      <div className="mx-auto max-w-2xl rounded-2xl bg-white">
+      <div className="mx-auto max-w-[736px] rounded-2xl bg-white">
         <RecipeImage />
 
-        <div className="space-y-5 p-8 sm:pt-0">
-          <h1 className={`${youngSerif.className} text-3xl font-bold`}>
+        <div className="space-y-5 p-10 pb-6 sm:pt-0">
+          <h1
+            className={`${youngSerif.className} text-3xl font-bold text-[#302d2c]`}
+          >
             Simple Omelette Recipe
           </h1>
           <p className="text-sm">

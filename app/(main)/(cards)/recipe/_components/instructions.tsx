@@ -39,7 +39,7 @@ const instructions = [
 
 export const Instructions = () => {
   return (
-    <section>
+    <section className="py-2">
       <h2
         className={`${youngSerif.className} text-2xl font-bold text-[#854632]`}
       >
