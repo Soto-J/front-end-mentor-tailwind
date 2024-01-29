@@ -18,7 +18,7 @@ export const RatingButtons = ({
           <button
             disabled={selected === i + 1}
             className={cn(
-              "flex h-10 w-10 items-center justify-center rounded-full bg-[#7c8798]/10 text-[#7c8798]",
+              "flex h-12 w-12 items-center justify-center rounded-full bg-[#7c8798]/10 text-[#7c8798]",
               selected === i + 1 && "bg-[#959eac] text-white",
               selected !== i + 1 && "hover:bg-[#fb7413] hover:text-white",
             )}

@@ -24,7 +24,7 @@ export default function InteractiveRatingPage() {
         overPass.className,
       )}
     >
-      <div className="max-w-[350px] space-y-4 rounded-3xl bg-[#252d37] p-4 py-5">
+      <div className="max-w-sm space-y-4 rounded-3xl bg-[#252d37] p-8">
         {!isSubmitted ? (
           <>
             <StarLogo />

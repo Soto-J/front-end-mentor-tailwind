@@ -40,7 +40,7 @@ export const ChallengeTabs = () => {
             onSelectionChange={(value) => setSelected(value)}
           >
             <Tab key="cards" title="Cards">
-              <ul className="">
+              <ul className="space-y-3">
                 {cardChallenges.map(({ label, href }) => (
                   <li key={label}>
                     <Link href={href} target="_blank">
