@@ -16,6 +16,7 @@ const cardChallenges = [
   { label: "Preview-Card", href: "/preview" },
   { label: "Recipe", href: "/recipe" },
   { label: "interactive rating", href: "/interactive-rating" },
+  { label: "Acticle Preview", href: "/article-preview" },
 ];
 
 const landingPageChallenges = [

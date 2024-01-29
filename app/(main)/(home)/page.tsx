@@ -1,12 +1,5 @@
 import { ChallengeTabs } from "./_components/tabs";
 
-const pages = [
-  { label: "qr-code", href: "/qr-code" },
-  { label: "Preview-Card", href: "/preview" },
-  { label: "Recipe", href: "/recipe" },
-  { label: "interactive rating", href: "/interactive-rating" },
-];
-
 export default function Home() {
   return (
     <div className="min-h-screen py-20">
