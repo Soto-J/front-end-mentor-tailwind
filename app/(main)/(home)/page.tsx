@@ -1,23 +1,28 @@
-import Link from "next/link";
+import { ChallengeTabs } from "./_components/tabs";
 
 const pages = [
   { label: "qr-code", href: "/qr-code" },
   { label: "Preview-Card", href: "/preview" },
   { label: "Recipe", href: "/recipe" },
+  { label: "interactive rating", href: "/interactive-rating" },
 ];
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <h1>Front-End Mentor Challenges</h1>
+    <div className="min-h-screen py-20">
+      <h1 className="text-center text-xl font-bold">
+        Front-End Mentor Challenges (Tailwind)
+      </h1>
 
-      <ul>
-        {pages.map(({ label, href }) => (
-          <li key={label}>
-            <Link href={href}>{label}</Link>
-          </li>
-        ))}
-      </ul>
+      <p className="mx-auto max-w-xl py-8 text-center text-sm">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+        excepturi deleniti quibusdam tempore, quo porro laudantium odit
+        perferendis. Sunt, ipsam. Nobis necessitatibus eos odit quasi laudantium
+        ad, hic sunt atque?
+      </p>
+      <div className="mx-auto max-w-fit">
+        <ChallengeTabs />
+      </div>
     </div>
   );
 }
