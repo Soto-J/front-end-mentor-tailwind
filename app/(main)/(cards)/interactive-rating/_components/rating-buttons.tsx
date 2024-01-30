@@ -12,7 +12,7 @@ export const RatingButtons = ({
   setSelected,
 }: RatingButtonProps) => {
   return (
-    <ul className="flex justify-between py-2">
+    <ul className="flex justify-between py-2 pb-4">
       {[...Array(rating)].map((_, i) => (
         <li key={i} onClick={() => setSelected(i + 1)}>
           <button
