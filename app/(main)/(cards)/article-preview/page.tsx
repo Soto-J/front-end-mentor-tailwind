@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
-import { Avatar } from "@nextui-org/react";
 import { Manrope } from "next/font/google";
-import Image from "next/image";
+
 import { ShareButton } from "./_components/share-button";
 import { DeskImage } from "./_components/desk-image";
+import { Avatar } from "./_components/avatar";
 
 const manRope = Manrope({ subsets: ["latin"], weight: ["500", "700"] });
 
@@ -15,8 +15,7 @@ export default function ArticlePage() {
         manRope.className,
       )}
     >
-      {/* <div className="grid max-w-xs grid-cols-1 grid-rows-2 overflow-hidden rounded-lg shadow-lg md:max-w-3xl md:grid-cols-3 md:grid-rows-1"> */}
-      <div className="flex w-[98%] max-w-sm flex-col overflow-hidden rounded-lg shadow-lg md:max-w-3xl md:flex-row">
+      <div className="flex w-[98%] max-w-sm flex-col rounded-lg shadow-lg md:max-w-2xl md:flex-row">
         <DeskImage />
 
         <section className="space-y-3 bg-white p-8 md:pr-10">
@@ -30,7 +29,7 @@ export default function ArticlePage() {
             you make any room feel complete.
           </p>
 
-          <div className="pt-4 flex items-center gap-4">
+          <div className="flex items-center gap-4 pt-4">
             <Avatar />
 
             <div className="flex flex-col">
